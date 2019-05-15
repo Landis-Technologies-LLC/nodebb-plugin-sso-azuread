@@ -1,4 +1,4 @@
-# NodeBB AzureAD OAuth SSO (Work In-progress)
+# NodeBB AzureAD OAuth SSO 
 
 NodeBB Plugin that allows users to login/register via Azure AD OAuth provider. 
 
@@ -26,8 +26,8 @@ NodeBB Plugin that allows users to login/register via Azure AD OAuth provider.
 
 1. In the list of pages for the app, select **Authentication**.
     - In the **Redirect URIs** section, select **Web** in the combo-box and enter the following redirect URI:
-    `https://<nodebb>/auth/openid/callback`
-    - In the **Advanced settings** section, set **Logout URL** to `http://<nodebb>/logout`.
+    `https://<nodebb-url>/auth/azuread/callback`
+    - In the **Advanced settings** section, set **Logout URL** to `https://<nodebb-url>/logout`.
     - In the **Advanced settings > Implicit grant** section, check **ID tokens** as this sample requires the [Implicit grant flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled to sign-in the user.
 
 1. Select **Save**.
@@ -41,13 +41,7 @@ NodeBB Plugin that allows users to login/register via Azure AD OAuth provider.
 
 ## How to Install
 
-1. Add the Azure OAuth credentials in config
+1. Add the Azure OAuth credentials in config.js
 1. Activate this plugin from the plugins page
 1. Restart your NodeBB
 1. Let NodeBB take care of the rest
-
-## Trouble?
-
-The NodeBB team builds out SSO plugins for a nominal fee. [Reach out to us for a quote.](mailto:sales@nodebb.org)
-
-Find us on [the community forums](http://community.nodebb.org)!
