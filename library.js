@@ -67,6 +67,8 @@
 			callbackURL: '/auth/' + constants.name + '/callback',
 			icon: 'fa-windows',
 			scope: constants.scope,
+			callbackMethod: 'post',
+			checkState: false,
 		});
 
 		callback(null, strategies);
