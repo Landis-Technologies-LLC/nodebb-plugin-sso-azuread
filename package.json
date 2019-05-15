@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-plugin-sso-oauth",
-  "version": "0.3.3",
-  "description": "NodeBB Generic OAuth SSO",
+  "name": "nodebb-plugin-sso-azuread",
+  "version": "0.0.1",
+  "description": "NodeBB AzureAD OAuth SSO",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianlam/nodebb-plugin-sso-oauth"
+    "url": "https://github.com/oshz/nodebb-plugin-sso-azuread.git"
   },
   "keywords": [
     "nodebb",
@@ -18,18 +18,21 @@
     "registration"
   ],
   "author": {
-    "name": "Julian Lam",
-    "email": "julian@nodebb.org"
+    "name": "Omair Khan",
+    "email": "omairkhan@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julianlam/nodebb-plugin-sso-oauth/issues"
+    "url": "https://github.com/oshz/nodebb-plugin-sso-azuread/issues"
   },
   "readme": "",
   "readmeFilename": "README.md",
   "dependencies": {
     "async": "^2.6.1",
-    "passport-oauth": "~1.0.0"
+    "passport": "*",
+    "passport-oauth": "~1.0.0",
+    "body-parser": "^1.15.2",
+    "passport-azure-ad": "^3.0.12"
   },
   "nbbpm": {
     "compatibility": "^1.0.1",
