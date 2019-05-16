@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-azuread",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeBB AzureAD OAuth SSO",
   "main": "library.js",
   "repository": {
@@ -15,7 +15,9 @@
     "sso",
     "single sign on",
     "login",
-    "registration"
+    "registration",
+    "azure",
+    "azure ad"
   ],
   "author": {
     "name": "Omair Khan",
