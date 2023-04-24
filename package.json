@@ -37,7 +37,7 @@
     "passport-azure-ad": "^3.0.12"
   },
   "nbbpm": {
-    "compatibility": "^1.12.1"
+    "compatibility": "^2.8.11"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
